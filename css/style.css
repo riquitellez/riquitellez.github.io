@@ -1,8 +1,10 @@
 body, footer, #divTop {
     font-family: helvetica, arial, sans-serif;
     max-width: 750px;
-    margin: auto;   
   }
+body{
+    margin: auto;
+}
 main {
     margin: 2em;
 }
