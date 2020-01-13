@@ -1,0 +1,67 @@
+body, footer, main, #divTop {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    max-width: 750px;
+  }
+
+#name {
+color: #ffffff;
+text-align: center;
+padding-top: 20px;
+padding-right: 25px;
+font-style: normal;
+font-size: 35px;
+}
+
+#subtitle {
+    color: #2F4F4F;
+    margin: 0px;  
+    font-style: normal;
+    font-size: 20px;
+    }
+
+footer, #divTop
+{
+    background-color: #2F4F4F;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer
+{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-style: normal;
+    font-size: 15px; 
+}
+
+.footer-line
+{
+    margin: 5px;
+    text-align: center;
+}
+footer a
+{
+    color: white;
+}
+
+#divTop
+{
+    height: 75px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 25px;
+    font-style: normal;
+    font-size: 35px;
+}
+#mypic
+{
+    width: 135px;
+    height:150px;
+    float: right;
+    border-radius: 10px;
+    margin-right: 25px;
+    
+}
