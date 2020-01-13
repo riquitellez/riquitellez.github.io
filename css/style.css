@@ -1,8 +1,13 @@
 body, footer, main, #divTop {
     font-family: helvetica, arial, sans-serif;
     margin: 2em;
-    max-width: 750px;
+    max-width: 750px;   
   }
+
+.content{
+    margin: auto;
+    max-width: 750px;
+}
 
 #name {
 color: #ffffff;
@@ -27,8 +32,7 @@ footer, #divTop
     border-radius: 10px;
 }
 
-footer
-{
+footer{
     color: #ffffff;
     text-align: center;
     padding-top: 5px;
@@ -37,18 +41,15 @@ footer
     font-size: 15px; 
 }
 
-.footer-line
-{
+.footer-line{
     margin: 5px;
     text-align: center;
 }
-footer a
-{
+footer a{
     color: white;
 }
 
-#divTop
-{
+#divTop{
     height: 75px;
     color: #ffffff;
     text-align: center;
@@ -56,8 +57,7 @@ footer a
     font-style: normal;
     font-size: 35px;
 }
-#mypic
-{
+#mypic{
     width: 135px;
     height:150px;
     float: right;
