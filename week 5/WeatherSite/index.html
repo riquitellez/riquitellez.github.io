@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Assignment for week 3 by Riqui Tellez">
+<meta name="description" content="Assignment for week 3 by Riqui Tellez"> <!-- Modificar!!!  -->
 <meta name="author" content="John Doe">
 
-<!-- This start file was build by Paul Cheney  -->
-<title>Precipitation: Water Cycle</title>
+<!-- Modificar!!!  -->
+<title>Evaporation: Water Cycle</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,6 +15,7 @@
 
 
 <!-- STYLE SHEETS -->
+<!-- Modificar!!!  -->
 <link href="css/normalize" rel="stylesheet">
 <!-- phone-default -->
 <link href="css/wc_small.css" rel="stylesheet">
@@ -23,34 +24,35 @@
 <!-- enhance-desktop -->
 <link href="css/wc_large.css" rel="stylesheet">
 
-
      
 </head>
 <body>
 <!-- HEADER HERE -->
+<!-- Modificar!!!  -->
 	<header class="clearfix">
 	<img src="images/wc_logo.png" alt="logo">
-    <h1>Water Cycle</h1>
-    <h2>Four Stages</h2>
+ <h1>Weather today</h1>
+        <h2>Four Stages</h2>
     </header>
     
     
 <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <ul >
-            <li><a href="index.html">Home</a></li class="active">
-                <li><a href="condensation.html">Preston</a></liclass="active">
-                <li class="active"><a href="index.html">Soda Springs</a></li>
-                <li><a href="index.html">Fish Haven</a></li>
-                <li><a href="index.html">Storm Center</a></li>
-                <li><a href="index.html">Gallery</a></li>
+    <nav class="clearfix" >
+        <button onclick="toggleMenu()" class="btn-mobile-menu">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>  
         </ul>
     </nav>
     
     
 <!-- CONTENT HERE -->
     <main>
-        <h1>Precipitation</h1>
+        <h1>Home</h1>
         <p>The page name should almost exactly match the menu item. </p>
     </main>
     
@@ -58,6 +60,8 @@
     <footer>
         &copy; 2020 &bull; Riqui Tellez
     </footer>
+
+    <script src="js/script.js" defer></script>
 
 </body>
 </html>

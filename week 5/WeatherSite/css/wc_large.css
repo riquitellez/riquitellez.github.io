@@ -31,8 +31,13 @@ nav ul{
 
 
 /*----------- MAIN --------------*/
+.row-imagen-texto .texto {
+    font-size: medium;
+}
 
-
+.item-forecast{
+    width: 17%;
+}
 
 /*----------- FOOTER --------------*/
     
