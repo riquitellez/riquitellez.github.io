@@ -67,6 +67,11 @@ nav ul li.active a {
     background-color: #000;
     color: #fff;
 }
+
+.imagen{
+    width:100%;
+    max-width: 100%;
+}
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
