@@ -66,10 +66,10 @@
             </picture>            
             <div class="texto">
                 Weather Summary
-                <ul>
-                    <li>High: 80</li>
-                    <li>Low: 67</li>
-                    <li>Wind: 6</li>
+                <ul class="tempBox">
+                    <li>Current temperature is: <span id="temp">30</span>&deg;</li>
+                    <li>Wind speed is: <span id="speed">20</span>mph</li>
+                    <li id="chill">Message</li>
                 </ul>
             </div>
         </section>
@@ -188,7 +188,21 @@
         <div class="footer-line">&copy; 2020 &bull; Riqui Tellez</divclass="footer-line">
         <div class="footer-line"><span id="getDateAndDay"></span></div>
     </footer>
+    
+    <script> 
+    const tempNumber = parseFloat(document.getElementById("temp").textContent);
+    const speedNumber = parseFloat(document.getElementById("speed").textContent);
 
+    let windchill =  35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
+    windchill = Math.round(windchill);
+
+    if(tempNumber <= 50 && speedNumber > 3){
+        document.getElementById("chill").textContent = "Wind Chill is: "+windchill+"\xB0F";
+    } else{
+        document.getElementById("chill").textContent = "No Wind Chill today";
+    }
+    
+    </script>
     <script src="js/script.js" defer></script>
 
 </body>

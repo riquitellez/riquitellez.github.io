@@ -84,6 +84,7 @@ position: relative;
 
 .row-imagen-texto .texto{
     position: absolute;
+    opacity: 0.6;
     top: 15px;
     left: 15px;
     font-size: xx-small;
@@ -92,7 +93,6 @@ position: relative;
     padding-right: 10px;
     color: #333;
     background-color: white;
-    border-radius: 5%;
     border-width: 3px;
     border-color: #333;
     margin: 0px;
