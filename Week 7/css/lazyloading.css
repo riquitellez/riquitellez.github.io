@@ -1,0 +1,15 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
+img{
+    margin-bottom: 10px;
+}
+
+img:hover{
+    box-sizing: border-box;
+    box-shadow: 0 0 10px gray;   
+}
+
