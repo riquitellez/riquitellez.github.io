@@ -50,6 +50,11 @@ header h2{
     width: 13%;
 }
 
+.grid-gallery{
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);   
+}
+
 /*----------- FOOTER --------------*/
 
 

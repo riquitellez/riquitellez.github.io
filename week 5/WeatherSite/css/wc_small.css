@@ -130,16 +130,46 @@ position: relative;
     border-radius: 14px;
 }
 
-.container-forecast{
+.container-forecast {
     text-align: center;
     padding: 1rem;
-
 }
 
 .forecast{
     display: none;
 }
 
+.grid-gallery{
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.image-description{
+
+    display: none;
+    margin: 5px;
+    text-align: center;
+    font-size: x-small;
+}
+
+.item-gallery{
+    -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray;
+}
+.item-gallery:hover{
+    -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
+   box-sizing: border-box;
+   box-shadow: 0 0 10px gray;
+}
 .contact-map, .contact-info{
     display: inline-block;
     width: 49%;
