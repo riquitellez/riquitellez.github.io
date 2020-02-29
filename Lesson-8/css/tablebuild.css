@@ -18,19 +18,26 @@ thead td{
     font-weight: bold;
 }
 
-  th{
-      background-color: #628ca6;
-      color: white;
-      font-size: large;
-      display: table-cell;
-      border:0.5px solid rgb(191, 208, 224);
-      padding: 10px 20px;
-  }
-  tr{
-    background-color: #e7f0ed;
+th{
+    background-color: #628ca6;
+    color: white;
     font-size: large;
+    display: table-cell;
     border:0.5px solid rgb(191, 208, 224);
+    padding: 10px 20px;
 }
+
+tr{
+background-color: #e7f0ed;
+font-size: large;
+border:0.5px solid rgb(191, 208, 224);
+}
+
+.achieved{
+    background-color: #628ca6;
+    color: white;
+}
+
 td{
     border:0.5px solid rgb(191, 208, 224);
     padding: 7.5px 15px;
