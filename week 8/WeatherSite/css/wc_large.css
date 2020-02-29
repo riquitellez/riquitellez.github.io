@@ -1,0 +1,53 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+header, nav{
+    max-width: 100%;
+}
+
+nav ul{
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.header-content{
+    max-width: 64rem;
+    width: 100%;
+    margin: auto;
+}
+
+.grid-gallery{
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+.row-imagen-texto .texto {
+    font-size: medium;
+}
+
+.item-forecast{
+    width: 17%;
+}
+
+.image-description{
+    display: block;
+}
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */

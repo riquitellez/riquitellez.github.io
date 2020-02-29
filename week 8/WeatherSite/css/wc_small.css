@@ -1,0 +1,223 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+
+    background-color: #F2AA4CFF;
+    /* display: flex; */
+}
+header img{
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+header h1 {margin: 0; font-size: 1.3rem;}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
+
+.header-content{
+    padding: .5rem 2%;
+}
+
+.friday-info{
+    background-color: #666;
+    padding: .5rem 2%;
+    display: none;
+}
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+.imagen{
+    width:100%;
+    max-width: 100%;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+.row-imagen-texto{
+position: relative;
+}
+
+.row-imagen-texto .texto{
+    position: absolute;
+    opacity: 0.6;
+    top: 15px;
+    left: 15px;
+    font-size: xx-small;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    color: #333;
+    background-color: white;
+    border-width: 3px;
+    border-color: #333;
+    margin: 0px;
+    width: auto;
+    height: auto;
+
+}
+
+
+.row-imagen-texto .texto ul{
+    padding-left: 20px;
+    margin-top: 3px;
+}
+
+.image-responsive{
+    width: 100%;
+    max-width: 100%;
+}
+
+.contendor-flex{
+    margin-bottom: 10px;
+}
+
+.contendor-flex p{
+    margin: 20px;
+}
+
+.item-forecast{
+    display: inline-block;
+    width: 17%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 10px #ff6c0394;
+    margin: 0 8px;
+    border-radius: 14px;
+}
+
+.container-forecast {
+    text-align: center;
+    padding: 1rem;
+}
+
+.forecast{
+    display: none;
+}
+
+.grid-gallery{
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.image-description{
+
+    display: none;
+    margin: 5px;
+    text-align: center;
+    font-size: x-small;
+}
+
+.item-gallery{
+    -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray;
+}
+.item-gallery:hover{
+    -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
+   box-sizing: border-box;
+   box-shadow: 0 0 10px gray;
+}
+.contact-map, .contact-info{
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+}
+
+.contact-info{
+    text-align: center;
+}
+
+.rrss{
+    list-style: none;
+}
+.rrss li{
+    display: inline-block;
+}
+.contact-text, .contact-info-data{
+    margin-bottom: 50px;  
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #fbdbb1;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+.footer-line{
+    margin: 5px;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main h1,h2,h3,h4{
+    padding: 0 2%;
+}
+
+body{
+    margin: 0;
+}
+main{
+    padding: 0;
+}
