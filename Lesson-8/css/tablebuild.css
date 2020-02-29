@@ -9,6 +9,7 @@ table{
     border-collapse: collapse;
     margin-left:auto;
     margin-right:auto;
+    box-shadow: 5px 10px 15px gray;
 }
 thead td, tfoot td{
     background-color: #7fb9c2;
