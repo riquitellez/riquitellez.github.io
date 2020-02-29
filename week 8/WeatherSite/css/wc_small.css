@@ -73,6 +73,7 @@ nav ul li.active a {
     max-width: 100%;
 }
 /*----------- MAIN --------------*/
+
 main {
     padding: 0 2%;
     min-height: 10rem;
@@ -189,7 +190,97 @@ position: relative;
 .contact-text, .contact-info-data{
     margin-bottom: 50px;  
 }
+/*----------- FORM --------------*/
+form fieldset{
+    margin: 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
 
+form legend{
+    color: #666;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: rgb(255, 165, 0);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #666;
+    border-radius: 5px;
+    padding: 0.75rem;
+    color: #666;   
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(248, 248, 248, 0.89);
+    margin-top: 10px;
+
+}
+
+form .flexly, form .radio{
+    padding-top: 1rem;
+    color: rgb(255, 165, 0);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#zcode{
+    -webkit-appearance: none;
+}
+form option, .choice{
+    font-size: 0.8rem;
+    color: #666;
+    
+}
+
+.choice, #indanger{
+    display: block;
+    margin-top: 5px;
+}
+
+#indanger{
+    margin-left: 0px;
+    margin-right: 0em;
+    max-width: 320px;
+}
+#rating, .flexly{
+    display: block;
+    margin-top: 10px;   
+}
+
+#ratingvalue{
+    color: #666;
+    display: block;
+}
+::placeholder { 
+    color: rgb(206, 206, 206);
+    font-size: small;
+}
+
+.btnSubmit{
+    width: 100%;
+    background-color: #ff6c0394;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 981.13px;
+    display: block;
+}
+
+.btnSubmit:hover {
+    background-color: #ffa05db9;
+}
+.
 /*----------- FOOTER --------------*/
 footer {
     background-color: #fbdbb1;

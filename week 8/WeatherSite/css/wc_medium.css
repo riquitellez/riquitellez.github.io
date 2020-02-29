@@ -55,6 +55,15 @@ header h2{
     grid-template-columns: repeat(2, 1fr);   
 }
 
+form fieldset{
+    margin: 21.44px;
+}
+
+.btnSubmit{
+    margin-left: 21.44px;
+    margin-right: 21.44px;
+
+}
 /*----------- FOOTER --------------*/
 
 

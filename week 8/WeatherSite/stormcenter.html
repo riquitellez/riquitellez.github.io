@@ -23,6 +23,7 @@
 <!-- enhance-desktop -->
 <link href="css/wc_large.css" rel="stylesheet">
 
+<script src="js/stormcenter.js" defer></script>
 
      
 </head>
@@ -56,54 +57,67 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <h1>Storm Center</h1>
-        <section class="row-imagen-texto">
-            <img class="imagen" src="images/Preston.jpg">
-            <div class="texto">
-                Weather Summary
-                <ul>
-                    <li>High: 80</li>
-                    <li>Low: 67</li>
-                    <li>Wind: 6</li>
-                </ul>
-            </div>
-        </section>
+        <h1>Storm report form</h1>
+        <form method="get" action="thanks.html" id="frmStormReport">
+            <fieldset>
+                <legend>Contact information</legend>
+                <label class="top">Complete name* <input type="text" name="cName" placeholder="name" required></label>
+                <label class="top">Email* <input type="text" name="email" placeholder="example@example.com" required></label>
+                <label class="top">Phone number* <input type="tel" name="phone" placeholder="1112222222" required></label>
+                <label class="top" id="zcode">Zip code* <input type="number" name="zipcode" placeholder="99999" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm information</legend>
+                <label class="top">Storm date* <input type="date" name="date" required></label>
+                <label class="top">Storm type*
+                    <select name="stormtype">
+                        <option value="">Select option</option>
+                        <option value="flashflood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </select>
+                </label>
+                <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                  </datalist>
+                <label class="top">Storm region*
+                    <select name="stormregion">
+                        <option>Select Region ...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+                <fieldset id="indanger">
+                    <legend>Danger level</legend>
+                    <label class="radio">In danger?</label>
+                    <label class="choice"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="choice"><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label class="choice"><input type="radio" name="danger" value="no">No</label>
+                </fieldset>
+                <label class="top">Comments:
+                    <input type="text" rows="4" cols="50" name="comment" form="usrform" >
+                  
+                </label>                
+            </fieldset>
+            <input type="submit" value="send form" class="btnSubmit">
 
-        <h2>Article Title</h2>
-        <section class="contendor-flex">
-            <p>
-                On this day in history the first (you find something cool in history and
-                complete this paragraph. Ryiam velit odio ut et ac tristique, dictumst,
-                odio. Velit a ac, integer sociis placerat rhoncus nec purus augue a
-                odio nunc. Odio nisi, parturient placerat cum in, nunc diam quis
-                ridiculus risus a porttitor massa. Augue penatibus. Proin cum? Risus
-                montes, turpis porta nunc tempor adipiscing adipiscing. Pulvinar
-                quis. Elit lundium lectus nisi! Egestas velit nunc, mus! Dolor facilisis,
-                nec nascetur cum, dictumst montes nisi, magna diam porta elit nisi
-                ac, purus placerat, a ac purus rhoncus! Dolor etiam. 
-                dolor ac! Massa, mid mid ultrices, rhoncus massa! Odio et arcu porta duis augue a facilisis vel duis nisi natoque tortor
-                ultricies odio rhoncus elementum et dictumst risus. Dapibus sit, sit ac. Adipiscing?
-            </p>
-            <img class='img-right clearfix' src="images/apple.PNG" alt="">
-            <p class="clearfix"></p>
-        </section>
-        <section class="contendor-flex">
-            <p>
-                On this day in history the first (you find something cool in history and
-                complete this paragraph. Ryiam velit odio ut et ac tristique, dictumst,
-                odio. Velit a ac, integer sociis placerat rhoncus nec purus augue a
-                odio nunc. Odio nisi, parturient placerat cum in, nunc diam quis
-                ridiculus risus a porttitor massa. Augue penatibus. Proin cum? Risus
-                montes, turpis porta nunc tempor adipiscing adipiscing. Pulvinar
-                quis. Elit lundium lectus nisi! Egestas velit nunc, mus! Dolor facilisis,
-                nec nascetur cum, dictumst montes nisi, magna diam porta elit nisi
-                ac, purus placerat, a ac purus rhoncus! Dolor etiam. 
-                dolor ac! Massa, mid mid ultrices, rhoncus massa! Odio et arcu porta duis augue a facilisis vel duis nisi natoque tortor
-                ultricies odio rhoncus elementum et dictumst risus. Dapibus sit, sit ac. Adipiscing?
-            </p>
-            <img class='img-right clearfix' src="images/apple.PNG" alt="">
-            <p class="clearfix"></p>
-        </section>
+        </form>
     </main>
     
 <!-- FOOTER HERE -->   
@@ -111,8 +125,5 @@
         <div class="footer-line">&copy; 2020 &bull; Riqui Tellez</divclass="footer-line">
         <div class="footer-line"><span id="getDateAndDay"></span></div>
     </footer>
-
-    <script src="js/script.js" defer></script>
-
 </body>
 </html>
