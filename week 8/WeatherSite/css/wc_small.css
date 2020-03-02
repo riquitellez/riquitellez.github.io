@@ -294,11 +294,6 @@ form option, .choice{
     background-color: #ffa05db9;
 }
 
-label form .top input:required{
-border-left: solid rgba(255, 92, 92, 0.582);
-
-}
-
 input:required:valid{
     border-left: solid rgb(8, 180, 8);
 }
@@ -308,6 +303,11 @@ textarea{
     max-width: 320px;
     border: solid 1px #666;
     border-radius: 5px;
+}
+
+#indanger{
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 /*----------- FOOTER --------------*/
 
