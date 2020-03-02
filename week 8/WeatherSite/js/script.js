@@ -35,3 +35,5 @@ switch(day) {
 return day + '' + date;
 }
 
+//JS to get name
+
