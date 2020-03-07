@@ -1,0 +1,89 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------- BODY --------------*/
+body {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}    
+
+/*----------- HEADER --------------*/
+
+h1 { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: rgba(14, 14, 143, 0.658);;
+}
+
+
+/*----------- MAIN --------------*/
+
+h2 {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(14, 14, 143, 0.658);
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    font-size: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    margin: 2px;
+    
+    
+}
+
+img {
+    width: 230px;
+    height: 150;    
+}
+
+
+.cards section  {
+    
+    margin: 5px;
+    background-color: rgb(255, 250, 250);
+    border: solid 1px rgb(150, 148, 148);
+    border-radius: 10px;
+       
+}
+ /*----------MAIN medium css-------------*/
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem)
+{
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+/*----------MAIN larg css-------------*/
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 1023px) {
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}    
+  
+/*----------- FOOTER --------------*/
+
+#footerWrapper {background-color:#ffff60;}
+
+footer {
+    padding: 0.5rem 2%;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer span {
+    color:#af4642;
+}
