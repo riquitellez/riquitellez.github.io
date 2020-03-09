@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Assignment for week 3 by Riqui Tellez"> <!-- Modificar!!!  -->
+<meta name="description" content="Weather page for Preston">
 <meta name="author" content="John Doe">
 
-<!-- Modificar!!!  -->
-<title>Evaporation: Water Cycle</title>
+<!-- This start file was build by Paul Cheney  -->
+<title>Thank you!</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
 
 <!-- STYLE SHEETS -->
 <link href="css/normalize" rel="stylesheet">
@@ -19,6 +22,7 @@
 <link href="css/wc_medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
 <link href="css/wc_large.css" rel="stylesheet">
+
 
      
 </head>
@@ -37,10 +41,10 @@
     
     
 <!-- NAVIGATION HERE -->
-    <nav class="clearfix" >
+    <nav class="clearfix">
         <button onclick="toggleMenu()" class="btn-mobile-menu">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="sodasprings.html">Soda Springs</a></li>
             <li><a href="fishhaven.html">Fish Haven</a></li>
@@ -49,18 +53,21 @@
         </ul>
     </nav>
     
-    
 <!-- CONTENT HERE -->
     <main>
-        <div class="towns"></div>
-    </main>
+        <h1>Thank you!</h1>
+        <section class="note">
+            <p>We appreciate you taking the time to report a storm. Many users will benefit from your information.</p>
+        </section>      
     
 <!-- FOOTER HERE -->   
     <footer>
-        &copy; 2020 &bull; Riqui Tellez
+        <div class="footer-line">&copy; 2020 &bull; Riqui Tellez</divclass="footer-line">
+        <div class="footer-line"><span id="getDateAndDay"></span></div>
     </footer>
 
     <script src="js/script.js" defer></script>
-
+</main>
+<script src="js/lazyloading.js"></script>
 </body>
 </html>

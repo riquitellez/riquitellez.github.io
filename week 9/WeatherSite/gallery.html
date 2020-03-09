@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Weather page for Preston">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Gallery</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/wc_small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/wc_medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/wc_large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    <div class="friday-info">
+        Infotmacion de los
+    </div>
+    <div class="header-content">
+        <img src="images/wc_logo.png" alt="logo">
+        <h1>Weather Today</h1>
+        <h2 class="clearfix">We are actually accurate</h2>
+    </div>
+</header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()" class="btn-mobile-menu">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>  
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Gallery</h1>
+    
+    <section class="weathergallery">
+        <div class="grid-gallery">
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/cloudy.png">
+                <p class="image-description">
+                    Cloudy day in Toledo
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/desert.png">
+                <p class="image-description">
+                    Hot day in the Sahara Desert
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/fall.png">
+                <p class="image-description">
+                    Beautiful fall in Guadalajara
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/thunders.png">
+                <p class="image-description">
+                    Storm in Aranjuez
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/snow.png">
+                <p class="image-description">
+                    Snow in Oviedo
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/sunny.png">
+                <p class="image-description">
+                    Sunny day in Valencia
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/tornado.png">
+                <p class="image-description">
+                    Tornado in Oklahoma
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/sandstorm.png">
+                <p class="image-description">
+                    Sandstorm in Morocco
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/rain.png">
+                <p class="image-description">
+                    Rainy day in Madrid
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/cloudy.png">
+                <p class="image-description">
+                    Cloudy day in Toledo
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/desert.png">
+                <p class="image-description">
+                    Hot day in the Sahara Desert
+                </p>
+            </div>
+            <div class="item-gallery">
+                <img class="image-responsive" src="images/Placeholder.png" data-src="images/fall.png">
+                <p class="image-description">
+                    Beautiful fall in Guadalajara
+                </p>
+            </div>
+        </div>       
+    </section>
+<!-- FOOTER HERE -->   
+    <footer>
+        <div class="footer-line">&copy; 2020 &bull; Riqui Tellez</divclass="footer-line">
+        <div class="footer-line"><span id="getDateAndDay"></span></div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</main>
+<script src="js/lazyloading.js"></script>
+</body>
+</html>
