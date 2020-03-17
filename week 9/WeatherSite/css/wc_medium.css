@@ -67,8 +67,9 @@ form fieldset{
 
 .towns section{
     display: flex;
-    max-width: 620px;
+    max-width: 720px;
     margin: 10px;
+    justify-content:center;
 }
 
 .towns section:nth-child(odd){

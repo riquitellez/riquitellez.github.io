@@ -199,7 +199,7 @@ max-width: 37rem;
 .towns section{
 
     width: 100%;
-    max-width: 320px;
+    text-align:center;
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: rgba(228, 226, 226, 0.986);
