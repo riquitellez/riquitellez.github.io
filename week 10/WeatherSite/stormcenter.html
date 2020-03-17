@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Weather page for Preston">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Storm Center</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/wc_small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/wc_medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/wc_large.css" rel="stylesheet">
+
+<script src="js/stormcenter.js" defer></script>
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    <div class="friday-info">
+        Infotmacion de los
+    </div>
+    <div class="header-content">
+        <img src="images/wc_logo.png" alt="logo">
+        <h1>Weather Today</h1>
+        <h2 class="clearfix">We are actually accurate</h2>
+    </div>
+</header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()" class="btn-mobile-menu">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>  
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Storm report form</h1>
+        <form method="get" action="thanks.html" id="frmStormReport">
+            <fieldset>
+                <legend>Contact information</legend>
+                <label class="top">Complete name* <input type="text" name="cName" placeholder="name" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="example@example.com" required></label>
+                <label class="top">Phone number* <input type="tel" name="phone" placeholder="1112222222" required></label>
+                <label class="top">Zip code* <input type="number" name="zipcode" placeholder="99999" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm information</legend>
+                <label class="top">Storm date* <input type="date" name="date" required></label>
+                <label class="top">Storm type*
+                    <select name="stormtype">
+                        <option value="">Select option</option>
+                        <option value="flashflood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </select>
+                </label>
+                <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                  </datalist>
+                <label class="top">Storm region*
+                    <select name="stormregion">
+                        <option>Select Region ...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+                <fieldset id="indanger">
+                    <legend>Danger level</legend>
+                    <label class="radio">In danger?</label>
+                    <label class="choice"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="choice"><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label class="choice"><input type="radio" name="danger" value="no">No</label>
+                </fieldset>
+                <label class="top">Comments:
+                    <div>
+                        <textarea rows="7" cols="50" name="comment" form="usrform"></textarea>
+                    </div>
+                </label>                
+            </fieldset>
+            <input type="submit" value="send form" class="btnSubmit">
+
+        </form>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <div class="footer-line">&copy; 2020 &bull; Riqui Tellez</divclass="footer-line">
+        <div class="footer-line"><span id="getDateAndDay"></span></div>
+    </footer>
+</body>
+</html>
