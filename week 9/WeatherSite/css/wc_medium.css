@@ -67,7 +67,7 @@ form fieldset{
 
 .towns section{
     display: flex;
-    max-width: 720px;
+    max-width: 960px;
     margin: 10px;
     justify-content:center;
 }
