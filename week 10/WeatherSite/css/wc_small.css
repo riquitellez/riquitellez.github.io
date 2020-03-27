@@ -49,6 +49,9 @@ nav ul {
     margin: 0;
 }
 
+.tempBox{
+    list-style-type: none;
+}
 nav ul li a {
     display: block;
     color: #eee;
@@ -121,6 +124,25 @@ position: relative;
     margin: 20px;
 }
 
+#fivedays{
+    text-align: center;
+    padding: 1rem;
+}
+
+#fivedays div{
+        display: inline-block;
+        width: 17%;
+        box-sizing: border-box;
+        padding: 20px;
+        box-shadow: 0 0 10px #ff6c0394;
+        margin: 0 8px;
+        border-radius: 14px;
+    }
+
+#fivedays div span, #fivedays div p{
+    font-size: 1.3vw;
+}
+
 .item-forecast{
     display: inline-block;
     width: 17%;
@@ -172,9 +194,8 @@ position: relative;
    box-shadow: 0 0 10px gray;
 }
 .contact-map, .contact-info{
-    display: inline-block;
-    width: 49%;
-    vertical-align: middle;
+    display: block;
+    width: 100%;
 }
 
 .contact-info{

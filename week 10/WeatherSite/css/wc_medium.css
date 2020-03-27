@@ -46,8 +46,8 @@ header h2{
     display: unset;
 }
 
-.item-forecast{
-    width: 13%;
+#fivedays div{
+    width: 17%;
 }
 
 .grid-gallery{
@@ -80,6 +80,12 @@ form fieldset{
     text-align: center;
 }
  
+.contact-map, .contact-info{
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+}
+
 /*----------- FOOTER --------------*/
 
 

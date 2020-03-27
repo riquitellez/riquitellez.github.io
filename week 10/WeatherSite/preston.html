@@ -67,60 +67,16 @@
             <div class="texto">
                 Weather Summary
                 <ul class="tempBox">
-                    <li>Current temperature is: <span id="temp">00</span>&deg;</li>
+                    <li>Currently: <span id="temp"></span>&deg;</li>
+                    <li>High: <span id="high">00</span>&deg;</li>
+                    <li>Humidity: <span id="humidity">00</span>%</li>
                     <li>Wind speed is: <span id="speed">00</span>mph</li>
                     <li id="chill">Message</li>
                 </ul>
             </div>
         </section>
         <section class="forecast">
-            <div class="container-forecast">
-                <div class="item-forecast">
-                    <h3>
-                        Sun
-                    </h3>
-                    <img class="image-responsive" src="images/021-storm.png">
-                    <p>
-                        12º 3º
-                    </p>
-                </div>
-                <div class="item-forecast">
-                    <h3>
-                        Mon
-                    </h3>
-                    <img class="image-responsive" src="images/021-rain-1.png">
-                    <p>
-                        13º 2º
-                    </p>
-                </div>
-                <div class="item-forecast">
-                    <h3>
-                        Tue
-                    </h3>
-                    <img class="image-responsive" src="images/021-sun.png">
-                    <p>
-                        14º 5º
-                    </p>
-                </div>
-                <div class="item-forecast">
-                    <h3>
-                        Wed
-                    </h3>
-                    <img class="image-responsive" src="images/021-cloudy-1.png">
-                    <p>
-                        9º 1º
-                    </p>
-                </div>
-                <div class="item-forecast">
-                    <h3>
-                        Thu
-                    </h3>
-                    <img class="image-responsive" src="images/021-storm.png">
-                    <p>
-                        14º 3º
-                    </p>
-                </div>
-            </div>
+            <div id="fivedays"></div>
         </section>
         <h2>Article Title</h2>
         <section class="contendor-flex">
@@ -190,6 +146,7 @@
     </footer>
     
     <script> 
+    
     const tempNumber = parseFloat(document.getElementById("temp").textContent);
     const speedNumber = parseFloat(document.getElementById("speed").textContent);
 

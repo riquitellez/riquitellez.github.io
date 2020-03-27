@@ -43,8 +43,8 @@ nav ul{
     font-size: medium;
 }
 
-.item-forecast{
-    width: 17%;
+#fivedays div{
+    width: 18%;
 }
 
 .image-description{
