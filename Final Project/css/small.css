@@ -1,0 +1,293 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+/*----------- HEADER --------------*/
+header {
+
+    background-color: #f8cbad;
+    /* display: flex; */
+}
+header img{
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+header h1 {margin: 0; font-size: 1.3rem; color:#519245;}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem; color:#519245;}
+
+.header-content{
+    padding: .5rem 2%;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: rgb(219, 241, 216);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tempBox{
+    list-style-type: none;
+}
+nav ul li a {
+    display: block;
+    color: #519245;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: #519245;
+    color: #fff;
+}
+nav ul li.active a {
+    background-color: #519245;
+    color: #fff;
+}
+
+.imagen{
+    width:100%;
+    max-width: 100%;
+}
+
+.btn-mobile-menu{
+    margin-left: 10px;
+    background-color: rgb(221, 221, 221);
+    border: 1px solid rgb(228, 227, 227);
+}
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+h1, h2{
+    color: #519245;
+}
+
+.row-imagen-texto{
+position: relative;
+}
+
+.row-imagen-texto .texto{
+    position: absolute;
+    opacity: 0.6;
+    top: 15px;
+    left: 15px;
+    font-size: xx-small;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    color: #333;
+    background-color: white;
+    border-width: 3px;
+    border-color: #333;
+    margin: 0px;
+    width: auto;
+    height: auto;
+
+}
+
+#fivedays{
+    text-align: center;
+    padding: 1rem;
+}
+
+#fivedays div{
+        display: inline-block;
+        width: 17%;
+        box-sizing: border-box;
+        padding: 20px;
+        box-shadow: 0 0 10px #519245;
+        margin: 0 8px;
+        border-radius: 14px;
+    }
+
+#fivedays div span, #fivedays div p{
+    font-size: 1.3vw;
+}
+
+.item-forecast{
+    display: inline-block;
+    width: 17%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 10px #519245;
+    margin: 0 8px;
+    border-radius: 14px;
+}
+
+.container-forecast {
+    text-align: center;
+    padding: 1rem;
+}
+
+.forecast{
+    display: none;
+}
+
+.image-responsive{
+    width: 100%;
+    max-width: 100%;
+}
+
+.contendor-flex{
+    margin-bottom: 10px;
+}
+
+.contendor-flex p{
+    margin: 20px;
+}
+
+.note p{
+    margin-left: 21.44px;
+    width: 100%;
+    max-width: 37rem;
+    }
+
+/*----------- FORM --------------*/
+form fieldset{
+    margin: 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 0.5rem;
+    max-width: 37rem;
+    width: 100%;
+    
+}
+
+form legend{
+    color: #666;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: #519245;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #666;
+    border-radius: 5px;
+    padding: 0.75rem;
+    color: #666;   
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(248, 248, 248, 0.89);
+    margin-top: 10px;
+}
+
+form .radio{
+    padding-top: 1rem;
+    color: #519245;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form option, .choice{
+    font-size: 0.8rem;
+    color: #666;
+    
+}
+
+.choice, #meals{
+    display: block;
+    margin-top: 5px;
+}
+
+#meals{
+    margin-left: 0px;
+    margin-right: 0em;
+    max-width: 320px;
+}
+
+::placeholder { 
+    color: rgb(206, 206, 206);
+    font-size: small;
+}
+
+.btnSubmit{
+    width: 100%;
+    background-color: #519245;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius:  4px;
+    cursor: pointer;
+    max-width: 37rem;
+    display: inline-block;;
+}
+
+.btnSubmit:hover {
+    background-color: rgb(219, 241, 216);
+}
+
+input:required:valid{
+    border-left: solid #519245;
+}
+
+textarea{
+    width: 100%;
+    max-width: 320px;
+    border: solid 1px #666;
+    border-radius: 5px;
+}
+
+#meals{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+/*----------- FOOTER --------------*/
+
+footer {
+    background-color: rgb(219, 241, 216);
+    padding: .5rem 2%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-line {
+    margin: 5px;
+    text-align: center;
+    color:#519245;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

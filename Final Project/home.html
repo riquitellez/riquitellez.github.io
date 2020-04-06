@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Home page for Picos de Europa site">
+<meta name="author" content="Riqui Tellez">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Home</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap" rel="stylesheet">
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header class="clearfix">
+        <div class="header-content">
+            <img src="imagenes/picos_logo.png" alt="logo">
+            <h1>Picos de Europa</h1>
+            <h2 class="clearfix">Cantabria, Spain</h2>
+        </div>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()" class="btn-mobile-menu">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Live the experience!</h1>
+        <section class="row-imagen-texto">
+            <picture>
+                <img class="imagen" src="imagenes/picos_bg.png" alt="Picos background image">
+            </picture>                        
+        </section>
+        <section class="forecast">
+            <div id="fivedays"></div>
+        </section>
+        <h2>Picos de Europa</h2>
+        <section class="contendor-flex">
+            <p>
+                The Picos de Europa National Park is located in the Cantabrian Mountains, between the provinces of Asturias, León and Cantabria.
+                Its vast expanse comprises territories belonging to the boroughs of Amieva, Cangas de Onís, Onís, Cabrales, Peñamellera Alta and Peñamellera Baja.
+            <br>
+            <br>
+                A great variety of different landscapes come together in this setting which are home to a peculiar animal kingdom of singular importance in the whole 
+                of the Iberian Peninsula. It is common to observe the flight of the golden eagle dominating the mountain; vultures and owls nesting on the steep walls 
+                of the mountains; capercaillie in wooded areas and mallards fishing in the Lakes of Covadonga, alongside the coots in Lake Ercina and the alpine choughs 
+                that find food under the protection of visitors.
+            </p>
+            <img class='img-right clearfix image-responsive' src="imagenes/pico_homecontent.png" alt="">
+            <p class="clearfix"></p>
+        </section>        
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <div class="footer-line">&copy; 2020-04-07 &bull; Riqui Tellez</divclass="footer-line">
+        <div class="footer-line"><a class="footer-line" href="https://riquitellez.github.io/">Portal page</a></div>
+    </footer>
+    <script src="js/script.js" defer></script>
+    <script src="js/home.js" defer></script>
+</body>
+</html>

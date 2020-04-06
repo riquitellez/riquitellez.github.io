@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Visit form for Picos de Europa site">
+<meta name="author" content="Riqui Tellez">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Visit</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap" rel="stylesheet">
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header class="clearfix">
+        <div class="header-content">
+            <img src="imagenes/picos_logo.png" alt="logo">
+            <h1>Picos de Europa</h1>
+            <h2 class="clearfix">Cantabria, Spain</h2>
+        </div>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()" class="btn-mobile-menu">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li class="active"><a href="visit.html">Visit</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Visit form</h1>
+        <form method="get" action="thankyou.html" id="frmStormReport">
+            <fieldset>
+                <legend>Sponsoring Organization</legend>
+                <label class="top">Sponsoring organization*<input type="text" name="cName" placeholder="organization name" required></label>
+                <label class="top">Group leader*<input type="text" name="lName" placeholder="leader name" required></label>
+                <label class="top">Group leader email* <input type="email" name="email" placeholder="groupleader@example.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Group information</legend>
+                <label class="top">Group size<input type="number" name="size" placeholder="12" required></label>
+                <label class="top">Gender
+                    <select name="gender">
+                        <option value="">Select option</option>
+                        <option value="boys">Boys</option>
+                        <option value="girls">Girls</option>
+                        <option value="mixed">Mixed</option>
+                    </select>
+                </label>               
+            </fieldset>
+            <fieldset>
+                <legend>Other information</legend>
+                <label class="top">Date of visit<input type="date" name="date"></label>
+                <fieldset id="meals">
+                    <legend>Meals</legend>
+                    <label class="choice"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="choice"><input type="radio" name="danger" value="no">No</label>
+                </fieldset>
+                <label class="top">Comments:
+                    <div>
+                        <textarea rows="7" cols="50" name="comment" form="usrform"></textarea>
+                    </div>
+                </label>                
+            </fieldset>
+            <input type="submit" value="send form" class="btnSubmit">
+        </form>    
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <div class="footer-line">&copy; 2020-04-07 &bull; Riqui Tellez</divclass="footer-line">
+        <div class="footer-line"><a class="footer-line" href="https://riquitellez.github.io/">Portal page</a></div>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
