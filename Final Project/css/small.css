@@ -167,6 +167,22 @@ position: relative;
     max-width: 37rem;
     }
 
+.contact-map, .contact-info{
+    display: block;
+    width: 100%;
+}
+
+.contact-info{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 14px;
+    box-shadow: 0 0 10px #519245;
+}
+
+.contact-text, .contact-info-data{
+    margin-bottom: 50px;  
+}
 /*----------- FORM --------------*/
 form fieldset{
     margin: 0;

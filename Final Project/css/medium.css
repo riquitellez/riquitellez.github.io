@@ -54,4 +54,15 @@ form fieldset{
 
 }
 
+.contact-map, .contact-info{
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+}
+
+.contact-info{
+    margin: 20px;
+    max-width: 370px;
+}
+
 }
