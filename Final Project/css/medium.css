@@ -27,6 +27,10 @@ header h2{
 
 
 /*----------- MAIN --------------*/
+h1, h2, h3 {
+    color: #519245;
+    text-align: start;
+}
 
 .row-imagen-texto .texto {
     font-size: small;
@@ -34,6 +38,11 @@ header h2{
 
 .contendor-flex{
     display: flex;
+}
+
+.contendor-flex p{
+    margin-left: 0px;
+    text-align: start;
 }
 
 .forecast{
@@ -64,5 +73,22 @@ form fieldset{
     margin: 20px;
     max-width: 370px;
 }
+
+div.activities>section{
+    box-sizing: border-box;
+    border-radius: 14px;
+    box-shadow: 0 0 10px #519245;
+    padding: 10px 20px 20px 20px;
+    margin-top: 10px;
+}
+div.activities>section>div>h3{
+text-align: center;
+}
+
+.note p{
+    width: 100%;
+    max-width: 37rem;
+    text-align: start;
+    }
 
 }

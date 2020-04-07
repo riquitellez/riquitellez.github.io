@@ -71,8 +71,8 @@ nav ul li.active a {
 }
 
 .btn-mobile-menu{
-    margin-left: 10px;
-    background-color: rgb(221, 221, 221);
+    margin-left: 5px;
+    background-color: rgb(219, 241, 216);
     border: 1px solid rgb(228, 227, 227);
 }
 
@@ -83,8 +83,13 @@ main {
     min-height: 10rem;
 }
 
-h1, h2{
+h1, h2, h3 {
     color: #519245;
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
 
 .row-imagen-texto{
@@ -162,7 +167,6 @@ position: relative;
 }
 
 .note p{
-    margin-left: 21.44px;
     width: 100%;
     max-width: 37rem;
     }
@@ -174,14 +178,38 @@ position: relative;
 
 .contact-info{
     width: 100%;
+    padding: 10px;
     text-align: center;
     box-sizing: border-box;
     border-radius: 14px;
     box-shadow: 0 0 10px #519245;
+    margin-top: 10px;
 }
 
 .contact-text, .contact-info-data{
     margin-bottom: 50px;  
+}
+
+div.activities>section>div>img{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.activities>section>div>img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.activities>section{
+    box-sizing: border-box;
+    border-radius: 14px;
+    box-shadow: 0 0 10px #519245;
+    padding: 10px;
+    margin-top: 10px;
 }
 /*----------- FORM --------------*/
 form fieldset{
